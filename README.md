@@ -31,7 +31,7 @@ qmk.json                  External-userspace build targets
 The keyboard-specific keymap will live at:
 
 ```text
-keyboards/keebio/iris_ce/rev1/keymaps/franken_keeb/
+keyboards/keebio/iris_ce/keymaps/franken_keeb/
 ```
 
 ## Local setup
@@ -49,6 +49,9 @@ Once the keymap is added, compile it with:
 ```sh
 make compile
 ```
+
+The flashable UF2 is saved to
+`output/keebio_iris_ce_rev1_franken_keeb.uf2`.
 
 Flashing is intentionally a separate command so compilation cannot
 accidentally modify the physical keyboard:
