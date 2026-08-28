@@ -13,6 +13,7 @@
 # Common firmware build output
 build/
 dist/
+output/
 *.bin
 *.elf
 *.hex
