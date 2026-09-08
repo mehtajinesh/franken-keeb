@@ -17,7 +17,9 @@ permissions:
 jobs:
   build:
     name: QMK userspace build
-    uses: qmk/.github/.github/workflows/qmk_userspace_build.yml@main
+    permissions:
+      contents: write
+    uses: qmk/.github/.github/workflows/qmk_userspace_build.yml@ae0d588378c528a97635c7dc4345fff2a2ff5dac
     with:
       qmk_repo: qmk/qmk_firmware
       qmk_ref: master
